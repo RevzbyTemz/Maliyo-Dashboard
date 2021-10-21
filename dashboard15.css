@@ -1,0 +1,774 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root{
+    --white: white;
+    --light-grey: ;
+    --grey: hsla(0, 0%, 15%, 1);
+}
+
+body{ 
+    height: 100vh;
+    background-color: grey;
+    overflow: hidden;
+}
+
+.dashboard-container{
+    width: 1420px;
+    height: 650px;
+    background-color: white;
+    display: flex;
+    margin: auto;
+    /* margin-top: 100px; */
+    background-color: #F6F4F5;
+}
+
+.menu-side-bar{
+    margin-right: 40px;
+    margin-top: 20px;
+     padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    
+}
+
+.side-bar{
+    width: 190px;
+    height: 650px;
+    background-color: white;
+    z-index: 30; 
+    color: hsla(0, 0%, 25%, 1);
+
+}
+
+.side-bar>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 105px;
+    position: relative;
+    top: 15px;
+    
+}
+
+.menu{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    margin: 3px;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 11px;
+    position: relative;
+    left: -5px;
+    top: 25px;
+}
+
+.menu:hover{
+    background-color: #E6F7FF;
+    border: 2px solid blue;
+    border-color: transparent blue transparent transparent;
+    width: 190px;
+    position: relative;
+    left: -23px;
+}
+
+.menu, img{
+    padding-right: 10px;
+}
+
+
+.hugo-boss{
+    text-align: end;
+    position: absolute;
+    right: -19px;
+    width: 1200px;
+    height: 60px;
+    background-color: white;
+    /* z-index: 10; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 60px;
+    font-size: 13px;
+    font-weight: 600;
+    color: hsla(0, 0%, 25%, 1);
+}
+
+.country{
+    padding-right: 30px;
+    font-size: 10px;
+    font-weight: normal;
+    color: #E2622C;
+}
+
+.user-circle{
+    width: 32px;
+    height: 32px;
+    background-color: #E2622C;
+    border-radius: 50%;
+    position: relative;
+    left: 20px;
+    
+}
+
+.user-logo{
+    z-index: 2;
+    position: relative;
+    left: -2px;
+    color: white;
+    width: 24px;
+    height: 24px;
+    
+}
+
+.dropdown{
+    width: 20px;
+}
+
+.total-performance{
+    position: relative;
+    right: 100px;
+}
+
+.statistic-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 100px;
+    left: 150px;
+}
+
+.total{
+    font-size: 10px;
+    line-height: 1.3;
+    width: 260px;
+    height: 160px;
+    margin: 2px 0 0 60px;
+    background-color: white;
+    /* border: 2px solid black; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    left: 10px;
+    color: hsla(0, 0%, 25%, 1);
+}
+
+.total> h5{
+    font-size: 35px;
+    position: relative;
+    color: hsla(0, 0%, 25%, 1);
+}
+
+.total>p{
+    font-weight: 700;
+}
+
+.fund-wallet{
+    width: 570px;
+    height: 315px;
+    background-color: white;
+    position: relative;
+    top: 130px;
+    left: 230px;
+    border-radius: 3px;
+}
+
+.fund-wallet>h5{
+    margin-left: 15px;
+    position: relative;
+    top: 10px;
+    font-size: 12px;
+}
+
+.bank-card{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: -10px;
+    /* position: relative;
+    left: 20px; */
+}
+
+.bank-card>.switch-button{
+    width: 35px;
+    height: 15px;
+    background-color: hsla(18, 76%, 53%, 1);
+    border-radius: 15px;
+    padding-left: 10px;
+    margin-left: 10px;
+    z-index: 2;
+}
+
+.bank-card>.control{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    left: -33px;
+    top: 1.4px;
+    z-index: 10;
+}
+
+
+.card-number{
+    display: flex;
+    flex-direction: column;
+
+}
+
+form{
+    margin-left: 30px;
+    margin-bottom: 50px;
+    padding: 5px 0 50px;
+    
+}
+
+/* .expiry-date{
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    margin-top: 10px;
+    border: 1px solid black;
+} */
+
+.expiry-date{
+    position: absolute;
+    top: 130px;
+    left: 30px;
+    margin: 10px 0 0 0;
+}
+
+.expiry-date>label{
+    position: absolute;
+    top: -6px;
+}
+
+.enter-amount{
+    position: absolute;
+    bottom: 65px;
+    margin-top: 30px;
+}
+
+.enter-amount>label{
+    position: absolute;
+    top: -6px;
+}
+
+.cvv{
+    
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    left: 360px;
+    top: 90px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.cvv>label{
+    position: absolute;
+    top: -17px;
+}
+
+input{
+    width: 300px;
+    height: 30px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 3px;
+
+}
+
+label{
+    font-size: 11px;
+    position: relative;
+    top: 7px;
+}
+
+/* .expiry-date>img{
+    position: relative;
+    left: 210px;
+    top: 5px;
+} */
+
+::placeholder{
+    padding-left: 10px;
+    font-size: 12px;
+    opacity: .7;
+}
+
+form>button{
+    margin-left: 0px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: hsla(18, 76%, 53%, 1);
+    color: white;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 30px;
+}
+
+.funding{
+    width: 290px;
+    height: 315px;
+    background-color: white;
+    position: relative;
+    left: 830px;
+    top: -185px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.funding>h5{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.funding>hr{
+    width: 250px;
+    position: relative;
+    left: 25px;
+    top: 179px;
+}
+
+.funding>.horizontal{
+    width: 65px;
+    transform: rotate(90deg);
+    position: relative;
+    left: -9px;
+    top: 186px;
+    margin-top: -41px;
+}
+
+.zero{
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    top: 83px;
+    left: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.horizontal-numbers{
+    position: absolute;
+    bottom: -128px;
+    left: 57px;
+    font-size: 12px;
+    letter-spacing: 83px;
+    /* transform: rotate(90deg); */
+}
+
+.card{
+    position: relative;
+    left: 200px;
+    top: 40px;
+    width: 20px;
+    height: 20px;
+    background-color: hsla(18, 76%, 53%, 1);
+    margin-bottom: 10px;
+}
+
+.card-bank{
+    background-color: hsla(211, 100%, 79%, 1);
+}
+
+.card>p{
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    left: 23px;
+    top: 2px;
+    font-weight: 700;
+}
+
+
+.flat-orange{
+    width: 30px;
+    height: 3px;
+    background-color: hsla(18, 76%, 53%, 1);
+    position: absolute;
+    top: 184px;
+    left: 30px;
+}
+
+.flat-blue{
+    width: 30px;
+    height: 5px;
+    background-color: hsla(211, 100%, 79%, 1);
+    position: absolute;
+    top: 182px;
+    left: 63px;
+}
+
+.tall-orange{
+    width: 30px;
+    height: 55px;
+    background-color: hsla(18, 76%, 53%, 1);
+    position: absolute;
+    left: 120px;
+    top: 132px;
+}
+
+.tall-blue{
+    width: 30px;
+    height: 30px;
+    background-color: hsla(211, 100%, 79%, 1);
+    position: absolute;
+    left: 153px;
+    top: 157px;
+}
+
+.medium-orange{
+    width: 30px;
+    height: 25px;
+    background-color: hsla(18, 76%, 53%, 1);
+    position: absolute;
+    left: 210px;
+    top: 162px;
+}
+
+.flatest-blue{
+    width: 30px;
+    height: 3px;
+    background-color: hsla(211, 100%, 79%, 1);
+    position: absolute;
+    left: 243px;
+    top: 184px;
+}
+
+
+.graph>p{
+
+    position: relative;
+    top: 180px;
+    margin-left: 50px;
+    font-size: 12px;
+    font-weight: 700
+}
+
+.graph{
+    position: absolute;
+    top: 30px;
+}
+
+/* .performance{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 140px;
+    left: 220px;
+    width: 150px;
+    height: 300px;
+    background-color: white;
+    color: hsla(0, 0%, 25%, 1);
+    
+}
+
+.performance img{
+    width: 110px;
+    position: relative;
+    top: -60px;
+    left: 5px;
+}
+
+.performance>p{
+    position: relative;
+    top: 52px;
+    font-size: 11px;
+    font-weight: 900;
+    font-size: 9px;
+}
+
+.eclipse>h5{
+    font-size: xx-large;
+    position: relative;
+    top: -103px;
+    left: 19px;
+    color: #E2622C;
+}
+
+.eclipse1{
+    position: relative;
+    top: 150px;
+    left: -5px;
+}
+
+.eclipse2{
+    position: relative;
+    top: 38px;
+    left: 2px;
+    transform: rotate(-5deg);
+}
+
+
+
+.student-statistics{
+    display: flex;
+     position: relative;
+    left: -640px; 
+    top: 300px;
+}
+
+#student-statistics{
+    width: 700px;
+    height: 300px;
+    font-size: 8px;
+    text-align: center;
+    background-color: white;
+
+}
+
+.heading{
+    font-size: 9px;
+    font-weight: 900;
+    position: relative;
+    left: -20px;
+}
+
+#student-statistics tr:nth-child(2) {
+    background-color: #F6F4F5;
+}
+
+#student-statistics tr:nth-child(4) {
+    background-color: #F6F4F5;
+}
+
+#student-statistics tr:nth-child(6) {
+    background-color: #F6F4F5;
+}
+
+#student-statistics tr:nth-child(8) {
+    background-color: #F6F4F5;
+}
+
+ .arrow{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 7px;
+    left: 5px;
+    z-index: 10;
+}
+
+.see-all{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 640px;
+    top: 10px;
+    color: #E2622C;
+}
+
+.green{
+    color: hsla(112, 86%, 30%, 1);
+
+}
+
+.red{
+    color: hsla(0, 73%, 46%, 1);
+}
+
+.link{
+    color: hsla(18, 76%, 53%, 1);
+    
+} */
+
+
+
+
+
+
+
+
+
+
+/* .........responsiveness........ */
+
+@media(max-width: 768px){
+.dashboard-container{
+    min-width: 100px;
+    min-height: 300px;
+}
+
+
+.side-bar>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    position: relative;
+    top: 15px;
+    left: 10px;
+    
+}
+
+.side-bar{
+    width: 60px;
+    height: 500px;
+    background-color: white;
+    position: fixed;
+    z-index: 30;
+}
+
+.hugo-boss{
+    text-align: end;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: right;
+    top: 100px;
+    left: 5px;
+    width: 340px;
+    height: 60px;
+    font-size: 10px;
+    z-index: 10;
+    background-color: white;
+    position: fixed;
+    text-align: end;
+}
+
+.country{
+    position: relative;
+    left: 35px;
+}
+
+.user-circle{
+    width: 24px;
+    height: 24px;
+    background-color: #E2622C;
+    border-radius: 50%;
+    position: relative;
+    left: 9px;
+    top: 3px;
+    
+}
+
+.user-logo{
+    position: relative;
+    top: 3px;
+    left: -8px;
+    width: 20px;
+    height: 20px;
+}
+
+.user{
+    position: relative;
+    left: -6px;
+}
+
+.dropdown{
+    position: relative;
+    top: 6px;
+    padding: 5px;
+    right: 4px;
+}
+
+
+.menu{
+    background-color: transparent;
+    width: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.menu-side-bar p{
+    display: none;
+}
+
+.statistic-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+.statistic-container>.total{
+    margin-bottom: 15px;
+}
+
+.total{
+    font-size: 8px;
+    font-weight: 600;
+    width: 140px;
+    height: 100px;
+    margin: 5px 0 0 50px;
+    background-color: white;
+    /* border: 2px solid black; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.total>h5{
+    font-size: 20px;
+}
+
+.performance{
+    position: relative;
+    left: 120px;
+    top: 30px;
+}
+
+.student-statistics{
+    display: flex;
+     position: relative;
+    left: -180px; 
+    top: 740px;
+}
+
+#student-statistics{
+    width: 230px;
+    height: 250px;
+    font-size: 8px;
+    text-align: center;
+    background-color: white;
+
+}
+
+.dashboard-container{
+    position: static;
+}
+#student-statistics~ .heading{
+    width: 100px;
+}
+
+}
